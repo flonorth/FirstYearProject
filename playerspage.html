@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>5-a-Side Fantasy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+/* ===== BODY & PITCH BACKGROUND ===== */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pitch {
+    width: 400px;
+    height: 650px;
+    background: url('pitch.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* ===== PLAYER CARD ===== */
+
+.player {
+    width: 85px;
+    background: white;
+    border-radius: 8px;
+    padding: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    position: absolute;
+}
+
+.price { color: #1a8a37; }
+.fixture { font-size: 9px; color: #333; }
+
+/* Shirt color blocks */
+.shirt {
+    height: 38px;
+    background: #ccc;
+    border-radius: 6px;
+    margin: 4px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Position colors */
+.gk { background:#ff9f43; }
+.def { background:#d35400; }
+.mid { background:#3498db; }
+.fwd { background:#c0392b; }
+
+/* ===== POSITIONING THE 5 PLAYERS ===== */
+
+/* Goalkeeper */
+#p1 { top: 530px; left: 160px; }
+
+/* Defenders */
+#p2 { top: 410px; left: 80px; }
+#p3 { top: 410px; left: 250px; }
+
+/* Midfielder */
+#p4 { top: 300px; left: 160px; }
+
+/* Forward */
+#p5 { top: 180px; left: 160px; }
+
+</style>
+</head>
+
+<body>
+
+<div class="pitch">
+
+    <!-- Goalkeeper -->
+    <div class="player" id="p1">
+        <div class="price">£4.5m</div>
+        <div class="shirt gk">GK</div>
+        <div>Verbruggen</div>
+        <div class="fixture">FUL (H)</div>
+    </div>
+
+    <!-- Defenders -->
+    <div class="player" id="p2">
+        <div class="price">£4.5m</div>
+        <div class="shirt def">DEF</div>
+        <div>Reinildo</div>
+        <div class="fixture">WHU (H)</div>
+    </div>
+
+    <div class="player" id="p3">
+        <div class="price">£4.0m</div>
+        <div class="shirt def">DEF</div>
+        <div>Estève</div>
+        <div class="fixture">TOT (A)</div>
+    </div>
+
+    <!-- Midfielder -->
+    <div class="player" id="p4">
+        <div class="price">£10.5m</div>
+        <div class="shirt mid">MID</div>
+        <div>Palmer</div>
+        <div class="fixture">CRY (H)</div>
+    </div>
+
+    <!-- Forward -->
+    <div class="player" id="p5">
+        <div class="price">£9.0m</div>
+        <div class="shirt fwd">FWD</div>
+        <div>Watkins</div>
+        <div class="fixture">NEW (H)</div>
+    </div>
+
+</div>
+
+</body>
+</html>
