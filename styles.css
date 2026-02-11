@@ -1,8 +1,10 @@
 
 * {
-    background-color: darkolivegreen;
+    background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    
+    
 }
 
 body {
@@ -10,17 +12,21 @@ body {
     text-align: center;
     margin: auto;
     padding: 5px;
+    
 }
 form {
-    box-shadow: 0px 0px 5px 15px black;
+    box-shadow: 0px 0px 5px 15px darkcyan;
+    background-color: steelblue;
     margin-bottom: 5%;
     padding: 5px;
 }
 h1{
     text-align: center;
+    background-color:deepskyblue;
+    background-position: top;
 }
 a{
-    color:lightcyan;
+    color:lightcyan; 
     box-shadow: 0px 0px 5px 1px grey;
     background-color: grey;
     text-decoration: none;
