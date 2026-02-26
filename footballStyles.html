@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-/<html lang="en">
+<html lang="en">
 <!-- I used a file from github - might be ethical considerations-->
 <head>
     <meta charset="UTF-8">
@@ -44,6 +44,84 @@
         z-index: 1;
     }
 
+    /* All the different position's text on the field */
+    .center-text{
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        color: grey;
+        font-size: 8em;
+        font-weight: bold;
+        z-index: 10;
+        pointer-events: none; /* prevents blocking clicks */
+    }
+    .goal-text{
+        position: absolute;
+        top:50%; /* the amount it is centered (rotated 90% is why its called top) */
+        left:10%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        color: grey;
+        font-size: 8em;
+        font-weight: bold;
+        z-index: 10;
+        pointer-events: none; 
+    }
+    .leftback-text{
+        position: absolute;
+        top:30%; /* the amount it is centered (rotated 90% is why its called top) */
+        left:20%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        color: grey;
+        font-size: 8em;
+        font-weight: bold;
+        z-index: 10;
+        pointer-events: none; 
+    }
+    .rightback-text{
+        position: absolute;
+        top:70%; /* the amount it is centered (rotated 90% is why its called top) */
+        left:20%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        color: grey;
+        font-size: 8em;
+        font-weight: bold;
+        z-index: 10;
+        pointer-events: none; 
+    }
+    .mid-text{
+        position: absolute;
+        top:50%; /* the amount it is centered (rotated 90% is why its called top) */
+        left:40%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        color: grey;
+        font-size: 8em;
+        font-weight: bold;
+        z-index: 10;
+        pointer-events: none; 
+    }
+    .sub-text{
+        position: absolute;
+        top:30%; /* the amount it is centered (rotated 90% is why its called top) */
+        left:80%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        color: grey;
+        font-size: 5em;
+        font-weight: bold;
+        z-index: 10;
+        pointer-events: none; 
+    }
+    .sub2-text{
+        position: absolute;
+        top:70%; /* the amount it is centered (rotated 90% is why its called top) */
+        left:80%;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        color: grey;
+        font-size: 5em;
+        font-weight: bold;
+        z-index: 10;
+        pointer-events: none; 
+    }
     .halfway-line {
         width: 60em;
         height: 80em;
@@ -192,6 +270,14 @@
                 <span class="corner-arc"></span>
                 
             </div>
+            <div class="center-text">Messi</div>
+            <div class="goal-text">Keating</div>
+            <div class="rightback-text">Carter</div>
+            <div class="leftback-text">Bronze</div>
+            <div class="mid-text">Walsh</div>
+            <div class="sub-text">Kelly</div>
+            
+            <div class="sub2-text">Russo</div>
         </div>
     </div>
 </body>
