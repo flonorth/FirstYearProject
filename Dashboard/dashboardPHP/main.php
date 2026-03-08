@@ -6,8 +6,8 @@
     </title>   
     
     <frameset cols="25%,75%">
-        <frame name="left" src="sidePanel.html" />
-        <frame name="center" src="home.html" />
+        <frame name="left" src="../dashboardHTML/sidePanel.html" />
+        <frame name="center" src="../dashboardHTML/home.html" />
         <noframes>
             <body>
                 Your browser no good

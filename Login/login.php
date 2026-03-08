@@ -46,7 +46,7 @@ if(isset($_POST['login'])){
             $user = $result->fetch_assoc();
             if(password_verify($password,$user['password'])){
                 $_SESSION['username'] = $user['user'];
-                header("Location:/FPL_APP/Dashboard/main.html");
+                header("Location:/FPL_APP/Dashboard//dashboardPHP/main.php");
                 exit();
             }
         }
@@ -58,6 +58,14 @@ if(isset($_POST['login'])){
         exit();
     }
 // add a register complete
+
+if(isset($_POST['logout'])){
+    $_SESSION = array(); // Clear all data
+    session_destroy();   // Kill the session
+    header("Location: index.php"); // Refresh the page to show defaults
+    exit;
+
+}
 ?>
 
 
