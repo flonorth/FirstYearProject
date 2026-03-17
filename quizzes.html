@@ -2,26 +2,89 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport", content="width = device-width, initial-scale = 1.0">
         <title>
             Quizzes page
         </title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel = "stylesheet" href="menubar.css">
     </head>
-    <body>
-        <!--Gonna implement a drop down menu, similar to fantasy football-->
-        
+    <style>
+        html{
+            font-size: 100% ;
+        }
+        h1 {border: solid black;
+            border-left: none;
+            margin-top: 0; /* remove top margin (whitespace) */ 
+            text-align: center;
+            font-size: 2.5rem;
+            background-color: blueviolet;
+        }
 
+
+        body{
+            margin: 0; /* remove space from body*/ 
+            padding: 0;
+        }
+ 
+        .container{
+            display: flex; /* Turns the element into a flex container */
+
+            flex-direction: column; /* By default it's flex-direction:  row; */
+
+            align-items: center;       /* centre items horizontally */
+            justify-content: flex-start;   /* start from top */ 
+
+            height: 100vh; /* Height set to size of screen (makes .container box size of screen) */
+            padding-top: 8vh; /* pushes everything down */
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10vh;  /* space between heading and buttons*/
+        }
+
+        .button-row {
+            display: flex;
+            flex-direction: row;
+            gap: 20vh;
+        }
+
+        .button {
+            background-color:cyan;
+            border-radius: 50px;
+            height: 35vh;
+            width: 40vh;
+            font-size: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            color: purple;
+            font-weight: 500;
+        }
         
-        <h1>Quizzes</h1>
-        <hr>
-        <table class="questions">
-            <tr>
-                <!-- Specifying the different headers-->
-                 <th> Question number</th>
-                 <th> Question </th>
-            </tr>
-            <tr>
-                <!-- The questions -->
-            </tr>
-        </table>
+        .button:hover{
+            box-shadow: 0 0 15px blueviolet;
+        }
+
+        .button:active{
+            background-color: blueviolet;
+        }
+    </style>
+
+    <body>
+        <h1>Quiz</h1>
+
+        <nav class="sidebar">
+            <a href="/main.html">Home</a>
+            <a href="/playerspage.html">Players</a>
+            <a href="/quizzes.html">Quiz</a>
+        </nav>
+        <div class="container" id="mainpage">
+            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Choose Category</h2>
+            <div class="button-row">
+                <button type="button" class = "button" onclick="buttonclicked()">Team</button>
+                <button type="button" class="button" onclick="buttonclicked()">Players</button>
+            </div>
+
+        </div>
+
+        <script src="quizzes.js"></script>
     </body>
+</html>
