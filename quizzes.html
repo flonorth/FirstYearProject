@@ -2,11 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport", content="width = device-width, initial-scale = 1.0">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <title>
             Quizzes page
         </title>
-        <link rel = "stylesheet" href="menubar.css">
     </head>
     <style>
         html{
@@ -49,14 +48,13 @@
         }
 
         .button {
-            background-color:cyan;
             border-radius: 50px;
             height: 35vh;
             width: 40vh;
             font-size: 1.5rem;
             font-family: 'Courier New', Courier, monospace;
-            color: purple;
-            font-weight: 500;
+            color: white;
+            font-weight: bold;
         }
         
         .button:hover{
@@ -66,23 +64,35 @@
         .button:active{
             background-color: blueviolet;
         }
+
+        .overlay{
+            visibility: hidden;
+            position: fixed; /* Creates the pop-up. Other elements are unaffected and slide underneath*/
+            top: 50%; /* vertical center */
+            left: 50%; /* horizontal center */
+            transform: translate(-50%, -50%); 
+            background-color: green;
+            width: 100vh;
+            height: 80vh;
+            border-radius: 50px;
+        }
     </style>
 
     <body>
         <h1>Quiz</h1>
-
-        <nav class="sidebar">
-            <a href="/main.html">Home</a>
-            <a href="/playerspage.html">Players</a>
-            <a href="/quizzes.html">Quiz</a>
-        </nav>
         <div class="container" id="mainpage">
-            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Choose Category</h2>
+            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><strong>Choose Category</strong></h2>
             <div class="button-row">
-                <button type="button" class = "button" onclick="buttonclicked()">Team</button>
-                <button type="button" class="button" onclick="buttonclicked()">Players</button>
+                <button type="button" class = "button" onclick="showPopup()" style = "background-image: url(https://static.standard.co.uk/2021/04/19/13/europeansuperleague190421v2-1.jpg?width=1200);
+            background-size:contain">Team</button>
+                <button type="button" class="button" onclick="showPopup()" style= "background-image: url(https://i.guim.co.uk/img/media/5e90a3850dc6aece800d43d284430b807edcde95/415_0_4528_3623/master/4528.jpg?width=465&dpr=1&s=none&crop=none);
+            background-size: contain">Player</button>
             </div>
+        </div>
 
+        <div id = "pop-up" class="overlay">
+            <h2 style="text-align: center;">Hello!</h2>
+            
         </div>
 
         <script src="quizzes.js"></script>
