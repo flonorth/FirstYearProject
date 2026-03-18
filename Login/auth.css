@@ -1,0 +1,141 @@
+:root{
+    --base-color:#fff;
+    --base-variant:#eee;
+    --text-color: #333;
+    --gradient-bg: #c2c2c2;
+    --box-shadow: rgba(0,0,0,0.1);
+    --gradient-two: #bb8dfa;
+
+
+}
+
+
+.darkmode{
+    --base-color: #070b1d;
+    --base-variant:#101425;
+    --text-color:#ffffff;
+    --gradient-bg: #0c0c0c;
+    --box-shadow: #9b57fa;
+    --gradient-two: #0c0c0c;
+     transition: none;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--text-color);
+    position: fixed;
+    top:20px;
+    right:20px;
+    font-size: 30px;
+    text-align: center;
+    transition: none;
+    
+    
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(to right, var(--gradient-bg), var(--gradient-two));
+    color: var(--text-color);
+
+}
+
+.container{
+    margin: 0 15px;
+
+}
+
+.form-box{
+    width: 100%;
+    max-width: width 450px;
+    padding: 30px;
+    background: var(--base-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--box-shadow);
+    display: none;
+}
+
+.form-box.active{
+    display: block;
+}
+
+h2{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:var(--text-color);
+}
+
+input{
+    width:100%;
+    padding: 12px;
+    background:var(--base-variant);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+button{
+    width:100%;
+    padding: 12px;
+    background: #9b57fa;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--base-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+
+button:hover{
+    background: #9357fa;
+}
+p{
+    font-size: 14.5px;
+    text-align: center;
+    margin-bottom: 10px;
+    color:var(--text-color);
+}
+
+p a {
+    color: #bb8dfa;
+    text-decoration: none;
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+.error-message{
+    padding: 12px;
+    background:#a42834 ; 
+    border-radius: 6px;
+    font-size: 16px;
+    color: #f8d7da;
+    text-align:center;
+    margin-bottom: 20px;
+}
