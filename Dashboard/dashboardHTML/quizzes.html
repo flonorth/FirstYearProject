@@ -23,8 +23,8 @@
         body{
             margin: 0; /* remove space from body*/ 
             padding: 0;
+            background: radial-gradient(darkturquoise,darkorchid);
         }
- 
         .container{
             display: flex; /* Turns the element into a flex container */
 
@@ -67,34 +67,127 @@
 
         .overlay{
             visibility: hidden;
+            opacity: 0; /* Completely invisible*/
             position: fixed; /* Creates the pop-up. Other elements are unaffected and slide underneath*/
             top: 50%; /* vertical center */
             left: 50%; /* horizontal center */
-            transform: translate(-50%, -50%); 
-            background-color: green;
+            transform: translate(-50%, -60%); /* slightly higher for animation */
+            background-color: white;
             width: 100vh;
             height: 80vh;
             border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 4vh; /*Adds default padding surrounding the popup*/
+        }
+
+        .overlay h2 {
+            margin-bottom: 2vh; /* much tighter */
+        }
+
+        .overlay input[type = "text"]{
+            width: 100%;
+            height: 6vh;
+            font-size: 1.2rem;
+            border-radius: 1vh;
+        }
+        .overlay.active{
+            visibility: visible;
+            opacity: 1; /* Visible */
+            transform: translate(-50%, -50%); /* slide into place */
+        }
+
+        .items-grid{
+            display: grid;
+            width: 100%;
+        }
+
+        .item{
+            padding: 1vh;
+            font-size: 1.2rem;
+            border-radius: 1vh;
+        }
+
+        .item:hover{
+            background-color: lightgray;
+        }
+
+        .back_button{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 5vh;
+            height: 9vh;
+            width: 14vh;
+            border-radius: 4vh;
+        }
+
+        .overlay2{
+            visibility: hidden;
+            opacity: 0;
+            position: fixed; /*Cannot be absolute*/
+            top: 7vh; /*So it doesn't hide the title*/
+            left: 0;
+            width: 100vw;
+            height: 92vh;
+            background-color: white;
+        }
+        .overlay2.active{
+            visibility: visible;
+            opacity: 1;
         }
     </style>
 
     <body>
         <h1>Quiz</h1>
-        <div class="container" id="mainpage">
+        <div class="container">
             <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><strong>Choose Category</strong></h2>
             <div class="button-row">
-                <button type="button" class = "button" onclick="showPopup()" style = "background-image: url(https://static.standard.co.uk/2021/04/19/13/europeansuperleague190421v2-1.jpg?width=1200);
+                <button type="button" class = "button" onclick="showteamPopup()" style = "background-image: url(https://static.standard.co.uk/2021/04/19/13/europeansuperleague190421v2-1.jpg?width=1200);
             background-size:contain">Team</button>
-                <button type="button" class="button" onclick="showPopup()" style= "background-image: url(https://i.guim.co.uk/img/media/5e90a3850dc6aece800d43d284430b807edcde95/415_0_4528_3623/master/4528.jpg?width=465&dpr=1&s=none&crop=none);
+                <button type="button" class="button" onclick="showplayerPopup()" style= "background-image: url(https://i.guim.co.uk/img/media/5e90a3850dc6aece800d43d284430b807edcde95/415_0_4528_3623/master/4528.jpg?width=465&dpr=1&s=none&crop=none);
             background-size: contain">Player</button>
             </div>
         </div>
 
-        <div id = "pop-up" class="overlay">
-            <h2 style="text-align: center;">Hello!</h2>
-            
+        <div id = "team_pop-up" class="overlay">
+            <h2 style="text-align: center;">Select Team</h2>
+
+            <input type="text" placeholder="Search Team..." oninput="filterList(this, 'teamList')"> <!-- 'this' refers to the input box itself -->
+            <div class="items-grid" id="teamList"> 
+                <div class="item" onclick="startQuiz()">Manchester United</div>
+                <div class="item">Manchester City</div>
+                <div class="item">Liverpool</div>
+                <div class="item">Chelsea</div>
+                <div class="item">Arsenal</div>
+                <div class="item">Tottenham</div>
+            </div>
+            <button class = "back_button" onclick="hidePopup('team_pop-up')">Back</button>
+        </div>
+        <div id = "player_pop-up" class="overlay">
+            <h2 style="text-align: center;">Select Player</h2>
+    
+            <input type="text" placeholder="Select Player" oninput="filterList(this, 'playerList')">
+        <div class="items-grid" id="playerList">
+            <div class = "item">Haaland</div>
+            <div class = "item">Bernardo Silva</div>
+            <div class = "item">Semenyo</div>
+            <div class = "item">Ruben Dias</div>
+            <div class = "item">Rodri</div>
+            <div class = "item">Donnarumma</div>
+            <div class = "item">Jeremy Doku</div>
+            <div class = "item">Rayan Cherki</div>
+            <div class = "item">Omar Marmoush</div>
+        </div>
+            <button class = "back_button" onclick="hidePopup('player_pop-up')">Back</button>
         </div>
 
+        <div class = "overlay2" id = "Quizscreen">
+            <h2>Welcome to the quiz page</h2>
+        </div>
         <script src="quizzes.js"></script>
     </body>
 </html>

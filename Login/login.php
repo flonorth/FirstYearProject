@@ -46,7 +46,7 @@ if(isset($_POST['login'])){
             $user = $result->fetch_assoc();
             if(password_verify($password,$user['password'])){
                 $_SESSION['username'] = $user['user'];
-                header("Location:/FPL_APP/Dashboard//dashboardPHP/main.php");
+                header("Location: /FirstYearProject/Dashboard/dashboardHTML/home.html");
                 exit();
             }
         }
