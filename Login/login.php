@@ -46,7 +46,7 @@ if(isset($_POST['login'])){
             $user = $result->fetch_assoc();
             if(password_verify($password,$user['password'])){
                 $_SESSION['username'] = $user['user'];
-                header("Location: /FirstYearProject/Dashboard/dashboardHTML/home.html");
+                header("Location: ../Dashboard/dashboardPHP/main.php");
                 exit();
             }
         }
@@ -62,7 +62,7 @@ if(isset($_POST['login'])){
 if(isset($_POST['logout'])){
     $_SESSION = array(); // Clear all data
     session_destroy();   // Kill the session
-    header("Location: index.php"); // Refresh the page to show defaults
+    header("Location: ../Login/index.php"); // Refresh the page to show defaults
     exit;
 
 }
