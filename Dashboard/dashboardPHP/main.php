@@ -5,9 +5,9 @@
         Main
     </title>   
     
-    <frameset cols="15%,85%">
-        <frame name="left" src="menu.html" />
-        <frame name="center" src="footballStyles.html" />
+    <frameset cols="25%,75%">
+        <frame name="left" src="../dashboardHTML/sidePanel.html" />
+        <frame name="center" src="../dashboardHTML/home.html" />
         <noframes>
             <body>
                 Your browser no good
