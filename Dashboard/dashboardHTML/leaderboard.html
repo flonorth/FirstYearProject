@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--<link rel="stylesheet" href="../dashboardCSS/mainStyles.css"> -->
+    <title>Leaderboard</title>
 </head>
+
+<style>
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h2{
+        font-size:50px;
+        text-shadow: 5px 5px 1px dimgrey;
+    }
+    body{
+        background: radial-gradient(circle, darkturquoise 0%,darkorchid 100%);
+        text-align: center;
+        margin: auto;
+        padding: 5px;
+        padding-top: 5%;
+    }
+    table{
+        
+        text-align: center;
+        width: 800px;
+        margin: auto;
+        border-style: inset;
+        border-width: 10px;
+        border-radius: 1%;
+        border-color:mediumpurple;
+        background: plum;
+        
+    }
+    th{
+        text-transform: uppercase;
+    }
+    td{
+        font-weight: bold;
+    }
+</style>
+
 <body>
-    <h2> LEADERBOARD</h2>
+    <h2> COMPSCI LEADERBOARD</h2>
+    <!----
+    <table>
+        <tr>
+            <th>
+                Position
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Total points
+            </th>
+            <th>
+                Weeks points
+            </th>
+        </tr>
+        <tr>
+            <td>
+                    1
+            </td>
+            <td>Flo</td>
+            <td>120</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Uzair</td>
+            <td>110</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Daniyal</td>
+            <td>90</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ahmed</td>
+            <td>80</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Aryan</td>
+            <td>75</td>
+            <td>55</td>
+        </tr>
+    </table>
+    --->
+    <table id="leaderboard">
+        <tr>
+            <th>Position</th>
+            <th>Name</th>
+            <th>Total points</th>
+            <th>Weeks points</th>
+        </tr>
+    </table>
 </body>
+
+<script>
+const data = [
+    { position: 1, name: "Flo", total: 120, week: 40 },
+    { position: 2, name: "Uzair", total: 110, week: 45 },
+    { position: 3, name: "Daniyal", total: 90, week: 35 },
+    { position: 4, name: "Ahmed", total: 85, week: 29},
+    { position: 5, name: "Aryan", total: 70, week: 46}
+];
+
+const table = document.getElementById("leaderboard");
+
+data.forEach(player => {
+    const row = table.insertRow();
+
+    row.insertCell().textContent = player.position;
+    row.insertCell().textContent = player.name;
+    row.insertCell().textContent = player.total;
+    row.insertCell().textContent = player.week;
+});
+</script>
+
+
 </html>
