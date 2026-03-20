@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 require_once '../../Login/db.php';
 
 
@@ -25,8 +26,8 @@ function renderPlayerButton($slot, $buttonCssClass, $sessionData, $emptyPlayer,$
 }
 
 
-if (isset($_POST['players'],$_POST['slot']) && !empty($_POST['players'])) {
-    $playerID = $_POST['players'];
+if (isset($_POST['player'],$_POST['slot']) && !empty($_POST['player'])) {
+    $playerID = $_POST['player'];
     $slot = $_POST['slot'];
     
     // JOIN allows us to get the 'position_name' from the other table

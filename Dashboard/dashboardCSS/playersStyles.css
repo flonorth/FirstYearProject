@@ -1,0 +1,126 @@
+
+:root{
+    --base-color:#fff;
+    --base-variant:#eee;
+    --text-color: #333;
+    --gradient-bg: #c2c2c2;
+    --box-shadow: rgba(0,0,0,0.1);
+    --gradient-two: #bb8dfa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+
+
+body {
+    background:linear-gradient(to right, darkturquoise,darkorchid);
+    background-attachment: fixed; 
+    flex-direction: column; 
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+    color: var(--text-color);
+      transition: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Puts them side-by-side */
+    gap: 20px;           /* Space between the two boxes */
+    align-items: flex-start; /* Keeps boxes aligned at the top */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style for both boxes */
+.filterBox {
+    flex: 0 0 250px;    /* Filters stay a fixed width (250px) */
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+ h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the buttons */
+.filterBtn, .confirmBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.filterBtn {
+    background-color: #5bb8f6;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+.boxDeco {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Tighter spacing for filters */
+    background-color: var(--base-variant);
+    border: none;
+    border-radius: 6px;
+}
+
+.playerTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+.playerTable th, .playerTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.playerTable tr:hover {
+    background-color: #f5f5f5;
+}
+
+.selectBtn {
+    background-color: #fb93f9;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.selectBtn:hover {
+    background-color: var(--gradient-two);
+}
+
+.playersBox {
+    flex: 1;            /* Players list takes up the rest of the space */
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    max-height: 80vh;   /* Optional: adds a scrollbar if list is too long */
+    overflow-y: auto;
+}
