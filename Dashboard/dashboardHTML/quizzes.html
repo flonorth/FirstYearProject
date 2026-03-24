@@ -6,143 +6,15 @@
         <title>
             Quizzes page
         </title>
+        <link rel="stylesheet" href="../dashboardCSS/quizStyles.css">
     </head>
-    <style>
-        html{
-            font-size: 100% ;
-        }
-        h1 {border: solid black;
-            border-left: none;
-            margin-top: 0; /* remove top margin (whitespace) */ 
-            text-align: center;
-            font-size: 2.5rem;
-            background-color: blueviolet;
-        }
-
-
-        body{
-            margin: 0; /* remove space from body*/ 
-            padding: 0;
-            background: radial-gradient(darkturquoise,darkorchid);
-        }
-        .container{
-            display: flex; /* Turns the element into a flex container */
-
-            flex-direction: column; /* By default it's flex-direction:  row; */
-
-            align-items: center;       /* centre items horizontally */
-            justify-content: flex-start;   /* start from top */ 
-
-            height: 100vh; /* Height set to size of screen (makes .container box size of screen) */
-            padding-top: 8vh; /* pushes everything down */
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 10vh;  /* space between heading and buttons*/
-        }
-
-        .button-row {
-            display: flex;
-            flex-direction: row;
-            gap: 20vh;
-        }
-
-        .button {
-            border-radius: 50px;
-            height: 35vh;
-            width: 40vh;
-            font-size: 1.5rem;
-            font-family: 'Courier New', Courier, monospace;
-            color: white;
-            font-weight: bold;
-        }
-        
-        .button:hover{
-            box-shadow: 0 0 15px blueviolet;
-        }
-
-        .button:active{
-            background-color: blueviolet;
-        }
-
-        .overlay{
-            visibility: hidden;
-            opacity: 0; /* Completely invisible*/
-            position: fixed; /* Creates the pop-up. Other elements are unaffected and slide underneath*/
-            top: 50%; /* vertical center */
-            left: 50%; /* horizontal center */
-            transform: translate(-50%, -60%); /* slightly higher for animation */
-            background-color: white;
-            width: 100vh;
-            height: 80vh;
-            border-radius: 50px;
-            transition: all 0.3s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 4vh; /*Adds default padding surrounding the popup*/
-        }
-
-        .overlay h2 {
-            margin-bottom: 2vh; /* much tighter */
-        }
-
-        .overlay input[type = "text"]{
-            width: 100%;
-            height: 6vh;
-            font-size: 1.2rem;
-            border-radius: 1vh;
-        }
-        .overlay.active{
-            visibility: visible;
-            opacity: 1; /* Visible */
-            transform: translate(-50%, -50%); /* slide into place */
-        }
-
-        .items-grid{
-            display: grid;
-            width: 100%;
-        }
-
-        .item{
-            padding: 1vh;
-            font-size: 1.2rem;
-            border-radius: 1vh;
-        }
-
-        .item:hover{
-            background-color: lightgray;
-        }
-
-        .back_button{
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            margin: 5vh;
-            height: 9vh;
-            width: 14vh;
-            border-radius: 4vh;
-        }
-
-        .overlay2{
-            visibility: hidden;
-            opacity: 0;
-            position: fixed; /*Cannot be absolute*/
-            top: 7vh; /*So it doesn't hide the title*/
-            left: 0;
-            width: 100vw;
-            height: 92vh;
-            background-color: white;
-        }
-        .overlay2.active{
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
+   
 
     <body>
-        <h1>Quiz</h1>
+        <div class="top-panel">
+            <span class="panel-title">QUIZ</span>
+        </div>
+        
         <div class="container">
             <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><strong>Choose Category</strong></h2>
             <div class="button-row">

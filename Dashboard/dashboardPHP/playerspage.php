@@ -16,8 +16,13 @@ $women = $_GET['women'] ?? '';
     <link rel="stylesheet" href="../dashboardCSS/playersStyles.css">
 </head>
 <body>
+    <div class="top-panel">
+         <button class ="Btn"   onclick= "window.location.href='pitch.php';">Back</button>
+        <span class="panel-title">PLAYERS</span>
+        
+    </div>
     <header>
-        <button  onclick= "window.location.href='pitch.php';">Back</button>
+       
     </header>
 
     <div class= "container">
