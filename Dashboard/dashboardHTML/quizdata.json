@@ -1,0 +1,426 @@
+{
+    "teams": {
+        "Manchester United" : [
+            {
+                "Question" : "Who is the owner of Manchester United?",
+                "Options"  : ["Kroenke Sports & Entertainment", "Roman Abramovich", "Tony Bloom", "The Glazer family"],
+                "Answer" : "The Glazer family"
+            },
+            {
+                "Question" : "WWhat is the nickname of Manchester United?",
+                "Options" : ["The Hammers", "The Reds", "The Clarets", "The Red Devils"],
+                "Answer" : "The Red Devils"
+            },
+            {
+                "Question" : "What is Manchester United's home ground?",
+                "Options" : ["Stampford Bridge", "Emirates", "Selhurst Park", "Old Trafford"],
+                "Answer" : "Old Trafford"                
+            },
+            {
+                "Question" : "When did Manchester United last win a trophy?",
+                "Options" : ["2024/25", "2020/21", "2023/24", "20217/18"],
+                "Answer" : "2023/24"
+            },
+            {
+                "Question" : "Who is Manchester United's manager?",
+                "Options" : ["Erik Ten Hag", "Jose Mourinho", "Ruben Amorim", "Michael Carrick"],
+                "Answer" : "Michael Carrick"
+            }    
+        ],
+        
+        "Manchester City" : [
+            {
+                "Question" : "What is Manchester City's home stadium?",
+                "Options" : ["Old Trafford", "Etihad Stadium", "Anfield", "Emirates Stadium"],
+                "Answer" : "Etihad Stadium"
+            },
+            {
+                "Question" : "What is Manchester City's nickname?",
+                "Options" : ["The Citizens", "The Blues", "The Sky Blues", "All of the above"],
+                "Answer" : "All of the above"
+            },
+            {
+                "Question" : "Who is Manchester City's manager?",
+                "Options" : ["Pep Guardiola", "Jurgen Klopp", "Mikel Arteta", "Erik Ten Hag"],
+                "Answer" : "Pep Guardiola"
+            },
+            {
+                "Question" : "What year did Manchester City win their first Champions League?",
+                "Options" : ["2021", "2022", "2023", "2024"],
+                "Answer" : "2023"
+            },
+            {
+                "Question" : "What colour is Manchester City's home kit?",
+                "Options" : ["Red", "Blue", "White", "Black"],
+                "Answer" : "Blue"
+            }
+        ],
+
+        "Liverpool" : [
+            {
+                "Question" : "What is Liverpool's home stadium?",
+                "Options" : ["Anfield", "Goodison Park", "Old Trafford", "St James' Park"],
+                "Answer" : "Anfield"
+            },
+            {
+                "Question" : "What is Liverpool's nickname?",
+                "Options" : ["The Reds", "The Blues", "The Eagles", "The Foxes"],
+                "Answer" : "The Reds"
+            },
+            {
+                "Question" : "Who was Liverpool's long-time manager before leaving in 2024?",
+                "Options" : ["Pep Guardiola", "Jurgen Klopp", "Antonio Conte", "Thomas Tuchel"],
+                "Answer" : "Jurgen Klopp"
+            },
+            {
+                "Question" : "What is Liverpool's anthem?",
+                "Options" : ["Blue Moon", "You'll Never Walk Alone", "Glory Glory Man United", "I'm Forever Blowing Bubbles"],
+                "Answer" : "You'll Never Walk Alone"
+            },
+            {
+                "Question" : "How many points are awarded for a win?",
+                "Options" : ["1", "2", "3", "5"],
+                "Answer" : "3"
+            }
+        ],
+
+        "Arsenal" : [
+            {
+                "Question" : "What is Arsenal's home stadium?",
+                "Options" : ["Emirates Stadium", "Highbury", "Stamford Bridge", "Tottenham Hotspur Stadium"],
+                "Answer" : "Emirates Stadium"
+            },
+            {
+                "Question" : "What is Arsenal's nickname?",
+                "Options" : ["The Gunners", "The Blues", "The Hammers", "The Saints"],
+                "Answer" : "The Gunners"
+            },
+            {
+                "Question" : "Who is Arsenal's current manager?",
+                "Options" : ["Mikel Arteta", "Pep Guardiola", "Jurgen Klopp", "Eddie Howe"],
+                "Answer" : "Mikel Arteta"
+            },
+            {
+                "Question" : "What colour is Arsenal's home kit?",
+                "Options" : ["Blue", "Red", "White", "Green"],
+                "Answer" : "Red"
+            },
+            {
+                "Question" : "What was Arsenal's old stadium?",
+                "Options" : ["Highbury", "Villa Park", "Elland Road", "Craven Cottage"],
+                "Answer" : "Highbury"
+            }
+        ],
+
+        "Tottenham Hotspur" : [
+            {
+                "Question" : "What is Tottenham's home stadium?",
+                "Options" : ["Wembley", "Tottenham Hotspur Stadium", "Emirates Stadium", "Stamford Bridge"],
+                "Answer" : "Tottenham Hotspur Stadium"
+            },
+            {
+                "Question" : "What is Tottenham's nickname?",
+                "Options" : ["Spurs", "The Blues", "The Foxes", "The Eagles"],
+                "Answer" : "Spurs"
+            },
+            {
+                "Question" : "What animal appears on Tottenham's badge?",
+                "Options" : ["Lion", "Cockerel", "Eagle", "Horse"],
+                "Answer" : "Cockerel"
+            },
+            {
+                "Question" : "What colour is Tottenham's home kit?",
+                "Options" : ["White", "Blue", "Red", "Black"],
+                "Answer" : "White"
+            },
+            {
+                "Question" : "Which city is Tottenham based in?",
+                "Options" : ["Manchester", "Liverpool", "London", "Birmingham"],
+                "Answer" : "London"
+            }
+        ],
+
+        "Chelsea" : [
+            {
+                "Question" : "What is Chelsea's home stadium?",
+                "Options" : ["Stamford Bridge", "Craven Cottage", "Emirates Stadium", "Old Trafford"],
+                "Answer" : "Stamford Bridge"
+            },
+            {
+                "Question" : "What is Chelsea's nickname?",
+                "Options" : ["The Blues", "The Reds", "The Citizens", "The Magpies"],
+                "Answer" : "The Blues"
+            },
+            {
+                "Question" : "What colour is Chelsea's home kit?",
+                "Options" : ["Blue", "Red", "White", "Yellow"],
+                "Answer" : "Blue"
+            },
+            {
+                "Question" : "Which year did Chelsea win their first Champions League?",
+                "Options" : ["2008", "2012", "2015", "2020"],
+                "Answer" : "2012"
+            },
+            {
+                "Question" : "Which London area is Chelsea located in?",
+                "Options" : ["West London", "North London", "East London", "South London"],
+                "Answer" : "West London"
+            }
+        ]
+    },
+
+    "Players" : {
+        "Haaland" : [
+            {
+                "Question" : "What position does Haaland play?",
+                "Options" : ["Strike", "Centre Forward", "Right Wing", "Centre Attacking Midfield"],
+                "Answer" : "Strike"
+            },
+            {
+                "Question" : "What team does Haaland play for?",
+                "Options" : ["Manchester United", "Manchester City", "Chelsea", "Arsenal"],
+                "Answer" : "Manchester City"
+            },
+            {
+                "Question" : "Which country does Haaland play for?",
+                "Options" : ["England", "Norway", "Sweden", "Denmark"],
+                "Answer" : "Norway"
+            },
+            {
+                "Question" : "What number shirt does Haaland wear at Manchester City?",
+                "Options" : ["7", "9", "10", "11"],
+                "Answer" : "9"
+            },
+            {
+                "Question" : "Which club did Haaland previously play for?",
+                "Options" : ["RB Leipzig", "Borussia Dortmund", "Bayern Munich", "Ajax"],
+                "Answer" : "Borussia Dortmund"
+            }
+            
+        ],
+
+            "Bernardo Silva": [
+            {
+                "Question": "What position does Bernardo Silva play?",
+                "Options": ["Goalkeeper", "Midfielder", "Defender", "Striker"],
+                "Answer": "Midfielder"
+            },
+            {
+                "Question": "Which country is Bernardo Silva from?",
+                "Options": ["Spain", "Portugal", "Brazil", "Italy"],
+                "Answer": "Portugal"
+            },
+            {
+                "Question": "Which club did Bernardo Silva join Man City from?",
+                "Options": ["Benfica", "Monaco", "Porto", "Sporting CP"],
+                "Answer": "Monaco"
+            },
+            {
+                "Question": "What shirt number does Bernardo Silva wear?",
+                "Options": ["10", "17", "20", "8"],
+                "Answer": "20"
+            },
+            {
+                "Question": "What is Bernardo Silva known for?",
+                "Options": ["Strength", "Dribbling", "Goalkeeping", "Heading"],
+                "Answer": "Dribbling"
+            }
+        ],
+
+        "Semenyo": [
+            {
+                "Question": "What position does Semenyo play?",
+                "Options": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
+                "Answer": "Forward"
+            },
+            {
+                "Question": "Which country does Semenyo represent?",
+                "Options": ["England", "Ghana", "France", "Nigeria"],
+                "Answer": "Ghana"
+            },
+            {
+                "Question": "Which league does Semenyo play in?",
+                "Options": ["La Liga", "Serie A", "Premier League", "Bundesliga"],
+                "Answer": "Premier League"
+            },
+            {
+                "Question": "What is Semenyo known for?",
+                "Options": ["Pace", "Goalkeeping", "Defending", "Long throws"],
+                "Answer": "Pace"
+            },
+            {
+                "Question": "What position is he mainly used as?",
+                "Options": ["Winger", "Centre Back", "Goalkeeper", "Full Back"],
+                "Answer": "Winger"
+            }
+        ],
+
+        "Ruben Dias": [
+            {
+                "Question": "What position does Ruben Dias play?",
+                "Options": ["Midfielder", "Defender", "Striker", "Goalkeeper"],
+                "Answer": "Defender"
+            },
+            {
+                "Question": "Which country is Ruben Dias from?",
+                "Options": ["Spain", "Portugal", "Italy", "France"],
+                "Answer": "Portugal"
+            },
+            {
+                "Question": "Which club did he join Man City from?",
+                "Options": ["Benfica", "Porto", "Sporting", "Braga"],
+                "Answer": "Benfica"
+            },
+            {
+                "Question": "What is Ruben Dias known for?",
+                "Options": ["Defending", "Dribbling", "Shooting", "Speed"],
+                "Answer": "Defending"
+            },
+            {
+                "Question": "What role does he often have?",
+                "Options": ["Captain", "Goalkeeper", "Winger", "Striker"],
+                "Answer": "Captain"
+            }
+        ],
+
+        "Rodri": [
+            {
+                "Question": "What position does Rodri play?",
+                "Options": ["Defender", "Midfielder", "Forward", "Goalkeeper"],
+                "Answer": "Midfielder"
+            },
+            {
+                "Question": "Which country is Rodri from?",
+                "Options": ["Spain", "Portugal", "Brazil", "France"],
+                "Answer": "Spain"
+            },
+            {
+                "Question": "Which club did Rodri join from?",
+                "Options": ["Barcelona", "Atletico Madrid", "Real Madrid", "Sevilla"],
+                "Answer": "Atletico Madrid"
+            },
+            {
+                "Question": "What is Rodri known for?",
+                "Options": ["Defensive midfield play", "Goalkeeping", "Wing play", "Heading"],
+                "Answer": "Defensive midfield play"
+            },
+            {
+                "Question": "What number does Rodri wear?",
+                "Options": ["8", "16", "10", "6"],
+                "Answer": "16"
+            }
+        ],
+
+        "Donnarumma": [
+            {
+                "Question": "What position does Donnarumma play?",
+                "Options": ["Defender", "Midfielder", "Goalkeeper", "Forward"],
+                "Answer": "Goalkeeper"
+            },
+            {
+                "Question": "Which country is Donnarumma from?",
+                "Options": ["Spain", "Italy", "France", "Germany"],
+                "Answer": "Italy"
+            },
+            {
+                "Question": "Which club is he famous for playing at?",
+                "Options": ["AC Milan", "Juventus", "Inter Milan", "Roma"],
+                "Answer": "AC Milan"
+            },
+            {
+                "Question": "What is Donnarumma known for?",
+                "Options": ["Reflex saves", "Dribbling", "Passing", "Heading"],
+                "Answer": "Reflex saves"
+            },
+            {
+                "Question": "What major international trophy did he win with Italy?",
+                "Options": ["World Cup", "Euro 2020", "Nations League", "Copa America"],
+                "Answer": "Euro 2020"
+            }
+        ],
+
+        "Jeremy Doku": [
+            {
+                "Question": "What position does Jeremy Doku play?",
+                "Options": ["Defender", "Midfielder", "Winger", "Goalkeeper"],
+                "Answer": "Winger"
+            },
+            {
+                "Question": "Which country is Doku from?",
+                "Options": ["France", "Belgium", "Netherlands", "Germany"],
+                "Answer": "Belgium"
+            },
+            {
+                "Question": "What is Doku known for?",
+                "Options": ["Speed and dribbling", "Defending", "Goalkeeping", "Heading"],
+                "Answer": "Speed and dribbling"
+            },
+            {
+                "Question": "Which club did he join Man City from?",
+                "Options": ["Rennes", "Lyon", "PSG", "Monaco"],
+                "Answer": "Rennes"
+            },
+            {
+                "Question": "What position does he usually play on?",
+                "Options": ["Left Wing", "Centre Back", "Goalkeeper", "Right Back"],
+                "Answer": "Left Wing"
+            }
+        ],
+
+        "Rayan Cherki": [
+            {
+                "Question": "What position does Cherki play?",
+                "Options": ["Midfielder", "Forward", "Defender", "Goalkeeper"],
+                "Answer": "Forward"
+            },
+            {
+                "Question": "Which country is Cherki from?",
+                "Options": ["France", "Spain", "Italy", "Germany"],
+                "Answer": "France"
+            },
+            {
+                "Question": "Which club did he come from?",
+                "Options": ["Lyon", "PSG", "Marseille", "Monaco"],
+                "Answer": "Lyon"
+            },
+            {
+                "Question": "What is Cherki known for?",
+                "Options": ["Skill and creativity", "Defending", "Goalkeeping", "Heading"],
+                "Answer": "Skill and creativity"
+            },
+            {
+                "Question": "What type of player is he?",
+                "Options": ["Attacking", "Defensive", "Goalkeeper", "Centre Back"],
+                "Answer": "Attacking"
+            }
+        ],
+
+        "Omar Marmoush": [
+            {
+                "Question": "What position does Marmoush play?",
+                "Options": ["Forward", "Defender", "Midfielder", "Goalkeeper"],
+                "Answer": "Forward"
+            },
+            {
+                "Question": "Which country is Marmoush from?",
+                "Options": ["Egypt", "Morocco", "Algeria", "Tunisia"],
+                "Answer": "Egypt"
+            },
+            {
+                "Question": "Which league has Marmoush played in?",
+                "Options": ["Bundesliga", "La Liga", "Serie A", "MLS"],
+                "Answer": "Bundesliga"
+            },
+            {
+                "Question": "What is Marmoush known for?",
+                "Options": ["Pace and finishing", "Goalkeeping", "Defending", "Heading"],
+                "Answer": "Pace and finishing"
+            },
+            {
+                "Question": "What role does he usually play?",
+                "Options": ["Attacker", "Defender", "Goalkeeper", "Centre Back"],
+                "Answer": "Attacker"
+            }
+        ]
+    }
+}
