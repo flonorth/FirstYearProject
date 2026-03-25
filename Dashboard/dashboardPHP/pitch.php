@@ -83,6 +83,10 @@ $Goalies = [
 
 
 <body>
+    <div class="top-panel">
+        <span class="panel-title">HOME</span>
+    </div>
+    
     <div class="container">
         <div class="field">
             <div class="left">
