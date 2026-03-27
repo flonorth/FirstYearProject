@@ -170,6 +170,7 @@
             width: 14vh;
             border-radius: 5vh;
             cursor: pointer;
+            z-index: 10;
         }
 
         .submit_button.active{
@@ -216,16 +217,17 @@
 
         .quizButtons button{
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            color: black;
             align-items: center;
             text-align: left;
             font-size: 1.2rem;
             border-radius: 4vh;
-            background-color: white;
             padding: 1.5rem 2rem;
             border: 2px solid #d6d6d6;
             cursor: pointer;
             transition: all 0.25s ease;
+            min-height: 60px;
         }
 
         .quizButtons button.selected { /* Use js here*/
@@ -234,6 +236,28 @@
             color: black;
             transform: scale(0.97);
         }
+
+        .submitQuizbtn{
+            visibility: hidden;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 5vh;
+            height: 9vh;
+            width: 14vh;
+            border-radius: 5vh;
+            cursor: pointer;
+            z-index: 100;
+        }
+        .submitQuizbtn.active{
+            visibility: visible;
+        }
+        
+        .submitQuizbtn:active{
+            background-color: #ccc;   /* darker */
+            transform: scale(0.97);   /* slight press effect */
+        }
+
         .overlay2.active{
             visibility: visible;
             opacity: 1;
@@ -272,11 +296,12 @@
             <h2 id = "testingQuizObject"></h2>
             <button onclick="hideQuizPage()" class="back_button">Back</button>
             <div class = "quizButtons">
-                <button type="button" onclick="selectButton(this)">Option 1</button>
-                <button type="button" onclick="selectButton(this)">Option 2</button>
-                <button type="button" onclick="selectButton(this)">Option 3</button>
-                <button type="button" onclick="selectButton(this)">Option 4</button>
+                <button type="button" onclick="selectButton(this)" id="button1"></button>
+                <button type="button" onclick="selectButton(this)" id="button2"></button>
+                <button type="button" onclick="selectButton(this)" id="button3"></button>
+                <button type="button" onclick="selectButton(this)" id="button4"></button>
             </div>
+            <button id="submit_quizBtn" class="submitQuizbtn">Submit</button>
         </div>
     <script src="quizzes.js"></script>
     </body>

@@ -81,6 +81,9 @@ function submit(Mode, clickedElement, clickedItem, button){ // Cannot use 'this'
     quizObject["Name"] = clickedItem;
     quizObject["Q/A"] = QuizData[Mode][clickedItem]      
     document.getElementById(button).classList.add("active");
+    console.log("Mode:", Mode);
+    console.log("Item:", clickedItem);
+    console.log("Data:", QuizData[Mode][clickedItem]);
 }
 function startQuiz(){
     document.getElementById("player_pop-up").classList.remove("active");
@@ -89,6 +92,12 @@ function startQuiz(){
     document.getElementById("Quizscreen").classList.add("active");
     const question = quizObject["Q/A"][0]["Question"]
     document.getElementById("testingQuizObject").textContent = question;
+    const options = quizObject["Q/A"][0]["Options"];
+    document.getElementById("button1").textContent = options[0];
+    document.getElementById("button2").textContent = options[1];
+    document.getElementById("button3").textContent = options[2];
+    document.getElementById("button4").textContent = options[3];
+
 }
 
 function hideQuizPage(){
@@ -101,4 +110,5 @@ function selectButton(clickedButton){
         item.classList.remove("selected")
     });
     clickedButton.classList.add("selected")
+    document.getElementById("submit_quizBtn").classList.add("active")
 }
